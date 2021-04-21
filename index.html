@@ -12,7 +12,7 @@
     </head>
     <body>
         <header id="header-style">
-            <h1>Noticias</h1>
+            <h1>noticias</h1>
             <h2>texto de ejemplo</h2>
             <nav>
                 <ul class="lista">
@@ -30,10 +30,10 @@
                         <a href="/contactanos.html">Contactanos</a>
                     </li>
                     <li>
-                        <a href="/autor/autor1.html">Autor 1</a>
+                        <a href="/autor1.html">Autor 1</a>
                     </li>
                     <li>
-                        <a href="/bibliografia/bibliografia.html">bibliografia</a>
+                        <a href="/bibliografia.html">bibliografia</a>
                     </li>
                     <li>
                         <a target="_blank" href="https://www.w3c.es/">W3C</a>
@@ -42,65 +42,67 @@
             </nav>
         </header>
 
-        <aside>
+        <aside class="aside-index">
             <p lang="en" class="p-color lista">
-                <i >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
                     perspiciatis veritatis nobis suscipit facere sed alias similique quam
                     consequuntur quibusdam officia, recusandae nostrum totam vero dolore, minima
                     consequatur sequi eaque.</i>
         </p>
         </aside>
             
-        <main>
-            <section>
-                <h2>Seccion de Noticias de tecnologia</h2>
-                <p>Noticias mas destacadas del mundo tecnologico</p>
-                <article>
+        <!-- <main>
+            <p>Imformacion muy importante</p>
+        </main> -->
+
+        <section>
+            <h2>Seccion de Noticias de tecnologia</h2>
+            <p>Noticias mas destacadas del mundo tecnologico</p>
+            <article>
+                <header>
+                    <hgroup>
+                        <h2 id="italica-titulo">Este es el titulo de el articulo 1</h2>
+                        <h3>Subtitulo de el articulo 1</h3>
+                    </hgroup>
+                </header>
+                <p class="total-width">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse
+                        alias nisi quidem laboriosam minus deleniti nihil cumque quod, dicta impedit
+                        cum, assumenda eos. Veniam porro totam facere tenetur? Officiis.
+                </p>
+                <img 
+                    src="https://i.picsum.photos/id/170/200/200.jpg?hmac=2Xh3j3MMZE07_G7UDPgPRm557LRHzyFrkyeWRXdhdvU"
+                    alt="Imagen Articulo 1">
+                <footer>
+                    <p><time datetime="2020-12-12"> 12-12-2020 </time></p>
+                </footer>
+            </article>
+            
+            <div lang="en">
+                <article id="important-article">
                     <header>
                         <hgroup>
-                            <h2 id="italica-titulo">Este es el titulo de el articulo 1</h2>
-                            <h3>Subtitulo de el articulo 1</h3>
+                            <h2>ESTE es el titulo de el articulo 2</h2>
+                            <h3>Subtitulo de el articulo 2</h3>
                         </hgroup>
                     </header>
-                    <p>
-                        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse
+                    <p class="p-color">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse
                             alias nisi quidem laboriosam minus deleniti nihil cumque quod, dicta impedit
-                            cum, assumenda eos. Veniam porro totam facere tenetur? Officiis.</b>
+                            cum, assumenda eos. Veniam porro totam facere tenetur? Officiis.
                     </p>
-                    <img 
-                        src="https://i.picsum.photos/id/170/200/200.jpg?hmac=2Xh3j3MMZE07_G7UDPgPRm557LRHzyFrkyeWRXdhdvU"
-                        alt="Imagen Articulo 1">
+                    <p><em>Lorem ipsum </em>, <i>dolor sit amet consectetur</i> adipisicing elit. Ratione libero praesentium reprehenderit ducimus <a href="#">accusantium</a> debitis! Porro est quod illum enim dolorum error, laudantium omnis. Eos, et ab. Facilis, quidem nobis!</p>
+                    <details>
+                        <summary>Haz click aca!!</summary>
+                        <p>Estoy visible!!</p>
+                    </details>
+                    <img src="/img/80-300x300.jpg" width="25%" alt="Imagen Articulo 2">
                     <footer>
-                        <p><time datetime="2020-12-12"> 12-12-2020 </time></p>
+                        <p>12-12-2020</p>
                     </footer>
                 </article>
-                
-                <div lang="en">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h2>Este es el titulo de el articulo 2</h2>
-                                <h3>Subtitulo de el articulo 2</h3>
-                            </hgroup>
-                        </header>
-                        <p class="p-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse
-                                alias nisi quidem laboriosam minus deleniti nihil cumque quod, dicta impedit
-                                cum, assumenda eos. Veniam porro totam facere tenetur? Officiis.
-                        </p>
-                        <p><em> <span >L</span> orem ipsum </em>, <i>dolor sit amet consectetur</i> adipisicing elit. Ratione libero praesentium reprehenderit ducimus <a href="#">accusantium</a> debitis! Porro est quod illum enim dolorum error, laudantium omnis. Eos, et ab. Facilis, quidem nobis!</p>
-                        <details>
-                            <summary>Haz click aca!!</summary>
-                            <p>Estoy visible!!</p>
-                        </details>
-                        <img src="/img/80-300x300.jpg" width="25%" alt="Imagen Articulo 2">
-                        <footer>
-                            <p>12-12-2020</p>
-                        </footer>
-                    </article>
-                </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
         <footer>
             <ul>
@@ -118,9 +120,11 @@
                     <a href="contactanos.html">Contactanos</a>
                 </li>
             </ul>
-            <p>Este sitio pertenece a la academia davinci </p>
-            <address> Argentina, Capital Federal, Santa fe 4844 </address>
-            <small> Derechos reservador &copy; 2021 </small>
+            <div class="align-right">
+                <p>Este sitio pertenece a la academia davinci</p>
+                <address> Argentina, Capital Federal, Santa fe 4844 </address>
+                <small> Derechos reservador &copy; 2021 </small>
+            </div>
         </footer>
 
     </body>
