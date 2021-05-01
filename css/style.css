@@ -22,7 +22,7 @@ h1{
 h2{
     text-decoration: overline;
     text-transform: lowercase;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h3{
@@ -37,10 +37,17 @@ p{
 }
 
 section{
-    background-image: url('/img/mosaic.jpg');
-    background-size: 15px 15px;
-    background-repeat: repeat;
+    background: url('/img/mosaic.jpg') no-repeat left center fixed;
+                /* url('/img/mosaic.jpg') -15px top,
+                url('/img/mosaic.jpg') fixed black; */
     padding: 15px 0px;
+    /* width: 40%;
+    display: inline-block */
+}
+
+aside{
+    /* width: 50%;
+    display: inline-block */
 }
 
 
@@ -53,6 +60,11 @@ header nav ul li a {
 
 /* Fin estilo del header */
 
+
+#footer-index{
+    /* background: rgb(63, 63, 182); */
+    background:url('/img/80-300x300.jpg') no-repeat center center fixed rgb(63, 63, 182);
+}
 
 #header-style{
     color:rgb(63, 63, 182);
@@ -67,6 +79,10 @@ header nav ul li a {
 #important-article:hover{
     color:rgb(199, 160, 199);
     text-decoration: underline;
+}
+
+#body-example{
+    background:url('../img/80-300x300.jpg') no-repeat 15px 15px fixed rgb(63, 63, 182);
 }
 
 .p-color{
@@ -90,8 +106,8 @@ header nav ul li a {
 .aside-index{
     padding: 10px 0px;
     background-image: url('/img/code-820275_1280.jpg');
-    background-attachment: fixed;
     background-size: cover;
+
 
 }
 
@@ -112,5 +128,33 @@ header nav ul li a {
 .area-article img{
     border-radius: 50px;
 }
+
+.image-width{
+    margin: auto;
+}
+
+.in-line{
+    display: inline;
+    margin-left: 10px;
+}
+.in-block{
+    display: block
+}
+
+.img-inline-block{
+    width: 100px;
+}
+
+.img-inline-block-1{
+    width: 120px;
+}
+
+.inline-block-div{
+    display: inline-block;
+    margin: 0px;
+}
+
+
+/* https://flukeout.github.io/ */
 
 
